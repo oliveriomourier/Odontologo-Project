@@ -11,7 +11,7 @@ public class Paciente {
     private int id;
     private String nombre;
     private String apellido;
-    
+
     @ManyToOne
     @JoinColumn(name = "odontologo_id", referencedColumnName = "id")
     private Odontologo odontologo;
